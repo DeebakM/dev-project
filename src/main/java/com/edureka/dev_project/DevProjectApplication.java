@@ -19,4 +19,9 @@ public class DevProjectApplication {
 		return "<h1>Hello There!!! Welcome to my project</h1>";
 	}
 	
+	@GetMapping("/")
+	public String inbox() {
+		return "<h1>This is my inbox</h1>";
+	}
+	
 }
