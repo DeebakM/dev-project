@@ -22,7 +22,7 @@ public class DevProjectApplication {
 	@GetMapping("/inbox")
 	public String inbox() {
 
-		return "<h1>This is my inbox module for this development project</h1>";
+		return "<h1>This is my inbox </h1>";
 
 	}
 	
