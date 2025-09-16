@@ -27,12 +27,13 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean install
-    - name: Archive the jar file
-      uses: actions/upload-artifact@v4
+   
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
       with:
-       name: dev-peoject-jar
-       path: target/*.jar
+        upload_url: ${{ github.event.release.upload_url }}
+        asset_path: ./target/dev-project.jar
+        asset_name: dev-project.jar
+        asset_content_type: application/java-archive
     
    
