@@ -32,7 +32,7 @@ jobs:
     - name: Archive the jar file
       uses: actions/upload-artifact@v4
       with:
-       name: dev-peoject-jar
+       name: dev-project-jar
        path: target/*.jar
     - name: Create GitHub Release
       id: create_release
