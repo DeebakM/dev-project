@@ -33,7 +33,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
        name: dev-project.jar
-       path: target/*.jar
+       path: target/app-40.jar
     - name: Create GitHub Release
       id: create_release
       uses: actions/create-release@v1
